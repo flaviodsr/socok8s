@@ -180,6 +180,7 @@
             path: "{{ socok8s_extravars }}"
             regexp: "^socok8s_ext_vip.*"
             line: "socok8s_ext_vip: {{ _vipip.stdout }}"
+            create: yes
 
         - meta: refresh_inventory
 
